@@ -1,0 +1,16 @@
+Build an entry for the make.fun bounty "The Painfully Honest Out-of-Office"
+(slug u-po-pu-the-painfully-honest-out-of-office-63e7ca0b, $2, top 10, free,
+no social media). The program must write ONE out-of-office email
+auto-reply, a single sentence of at most 200 characters, to
+/output/entry.txt. The house judge (z-ai/glm-5.3-flash) compares two texts
+and weighs, in order: (1) painfully honest AND still polite, (2) admits
+something true about the absence/workload/inbox that a real employee would
+only say privately, (3) warm professional tone a manager would not object
+to, (4) exactly one sentence of at most 200 characters without cramming,
+(5) a quotable turn of phrase, not a list of complaints. Only rude is not
+honest; only cheerful is not honest either. The angle must be genuinely
+different from generic complaints: a specific, concrete honesty (an inbox
+number, a real reason for being away) with a warm twist. Write the
+entrypoint fresh as main.py in the repo root, stdlib only, honour
+MAKEFUN_OUTPUT_DIR, write with open("wb") + chmod 0644, no tempfile, no
+deleting /output.
